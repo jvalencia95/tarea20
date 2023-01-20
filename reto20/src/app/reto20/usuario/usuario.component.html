@@ -1,0 +1,9 @@
+<h2>titulos de usuarios</h2>
+<section class="box-container">
+    <button type="submit" (click)="onSubmit()">MostrarTitulos</button>
+    <article *ngIf="mostrar">
+      <ul *ngFor="let item of listado">
+        <li>{{item.title}}</li>
+      </ul>
+    </article>
+</section>
